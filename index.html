@@ -63,7 +63,7 @@ You pay the ship&#39;s captain the fee and step onto the docks. You have nothing
 (set: $eatenbylurush to &quot;n&quot;)
 (set: $starozquest to &quot;notstarted&quot;)
 (set: $shanadead to &quot;n&quot;)
-</tw-passagedata><tw-passagedata pid="4" name="Staroz 1" tags="" position="700,650" size="100,100">&lt;img src=&quot;https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e2cf11f8-ba79-4bd9-b9c8-9dfbefcb70d9/dlp4ign-57c8e8ed-6c2f-48ea-a05a-d0febd9b372b.png/v1/fill/w_894,h_894,q_70,strp/wonkothesane0689_yellow_lizardman_tattered_tunic_s_by_froy233_dlp4ign-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiIvZi9lMmNmMTFmOC1iYTc5LTRiZDktYjljOC05ZGZiZWZjYjcwZDkvZGxwNGlnbi01N2M4ZThlZC02YzJmLTQ4ZWEtYTA1YS1kMGZlYmQ5YjM3MmIucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.F330qaWnaax0Z9AjizO4pAY1MI5VGdmy51-tAwN_oo4&quot; ALIGN=RIGHT WIDTH=50% HEIGHT=50%&gt;&lt;/img&gt;
+(set: $askuradead to &quot;n&quot;)</tw-passagedata><tw-passagedata pid="4" name="Staroz 1" tags="" position="700,650" size="100,100">&lt;img src=&quot;https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e2cf11f8-ba79-4bd9-b9c8-9dfbefcb70d9/dlp4ign-57c8e8ed-6c2f-48ea-a05a-d0febd9b372b.png/v1/fill/w_894,h_894,q_70,strp/wonkothesane0689_yellow_lizardman_tattered_tunic_s_by_froy233_dlp4ign-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiIvZi9lMmNmMTFmOC1iYTc5LTRiZDktYjljOC05ZGZiZWZjYjcwZDkvZGxwNGlnbi01N2M4ZThlZC02YzJmLTQ4ZWEtYTA1YS1kMGZlYmQ5YjM3MmIucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.F330qaWnaax0Z9AjizO4pAY1MI5VGdmy51-tAwN_oo4&quot; ALIGN=RIGHT WIDTH=50% HEIGHT=50%&gt;&lt;/img&gt;
 The lisha blocks your path
 (if: $species is &quot;hurum&quot;)[&quot;What&#39;s a tasty little thing like you doing here?&quot;
 
@@ -207,6 +207,8 @@ The hurum woman with scruffy hair and a mousey face beams at you. Her clothes le
 
 [[&quot;You must be wearing one of your own outfits because you look absolutely scrumptious!&quot;|Misha 3]]
 
+[[&quot;What&#39;s the deal with that grumpy jewellery merchant?&quot;|Misha 29]]
+
 [[Go back to looking around the high market|High market]]]
 
 (else:)[(if: $skimpybought is &quot;n&quot;)[She holds up a silky two-piece outfit that would barely hide your nipples and privates, &quot;I bet you&#39;d look great in this one! I know it&#39;s a bit skimpy, but trust me, when lishas see all that skin so stylishly presented, they&#39;ll find you irresistable! Only 10 copper ingots&quot;
@@ -216,6 +218,8 @@ The hurum woman with scruffy hair and a mousey face beams at you. Her clothes le
 (if: $skimpybought is &quot;y&quot;)[(if: $skimpywearing is &quot;y&quot;)[[[&quot;Can I change out of the outfit I bought? All of the lishas are staring at me like I&#39;m a tasty treat, it&#39;s making me nervous...&quot;|Misha 6]]]
 
 (if: $skimpywearing is &quot;n&quot;)[[[&quot;Can I change into the outfit I bought? I&#39;m ready to look delicious!&quot;|Misha 5]]]]
+
+[[&quot;What&#39;s the deal with that grumpy jewellery merchant?&quot;|Misha 29]]
 
 [[Go back to looking around the high market|High market]]]
 
@@ -268,6 +272,8 @@ You put your plain, dirty tunic back on.
 (unless: $ankaquest is &quot;complete&quot;)[[[&quot;How&#39;s business?&quot;|Anka 2]]]
 
 [[&quot;Do you know where I could buy a dagger?&quot;|Anka 4]]
+
+[[&quot;What do you think of that cute girl selling those racy outfits?&quot;|Anka 29]]
 
 [[Go back to looking around the high market|High market]]</tw-passagedata><tw-passagedata pid="24" name="Anka 2" tags="" position="1275,1200" size="100,100">&lt;img src=&quot;https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e2cf11f8-ba79-4bd9-b9c8-9dfbefcb70d9/dlp97wd-1fcb442b-21b2-412d-ae14-d2ac037ea0a1.png/v1/fit/w_828,h_1242,q_70,strp/chatgpt_image_mar_1__2026__04_08_54_pm_by_froy233_dlp97wd-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTUzNiIsInBhdGgiOiIvZi9lMmNmMTFmOC1iYTc5LTRiZDktYjljOC05ZGZiZWZjYjcwZDkvZGxwOTd3ZC0xZmNiNDQyYi0yMWIyLTQxMmQtYWUxNC1kMmFjMDM3ZWEwYTEucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.LHn8lMqAunqesEW2noxPAsUixqzs92J0niAExvJhWtQ&quot; ALIGN=RIGHT WIDTH=50% HEIGHT=50%&gt;&lt;/img&gt;
 (if: $ankaquest is &quot;step1&quot; and $species is &quot;hurum&quot;)[&quot;Business is booming! Lurush bought one of my necklaces and now all sorts of fancy types come to my stall. You told Lurush about me, didn&#39;t you?&quot;
@@ -355,7 +361,7 @@ After you walk through the refreshing shade of a palm tree grove, you are faced 
 
 (if: $bannedfromsapphire is &quot;y&quot;)[&quot;Didn&#39;t I tell you to never show your face here again?&quot;]
 (if: $askuradead is &quot;y&quot; and $bannedfromsapphire is &quot;n&quot;)[[[Walk in|First hall]]]
-(else:)[[[Walk in|Askura 1]]]
+(if: $askuradead is &quot;n&quot; and $bannedfromsapphire is &quot;n&quot;)[[[Walk in|Askura 1]]]
 
 [[Go back to the Square|Square]]</tw-passagedata><tw-passagedata pid="35" name="Askura 1" tags="" position="1725,1100" size="100,100">&lt;img src=&quot;https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e2cf11f8-ba79-4bd9-b9c8-9dfbefcb70d9/dhaw4o5-11baa241-c727-44f6-bea1-41b18a63f960.png/v1/fill/w_894,h_894,q_70,strp/askura_by_froy233_dhaw4o5-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiIvZi9lMmNmMTFmOC1iYTc5LTRiZDktYjljOC05ZGZiZWZjYjcwZDkvZGhhdzRvNS0xMWJhYTI0MS1jNzI3LTQ0ZjYtYmVhMS00MWIxOGE2M2Y5NjAucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ml1YrLlZX0oEkce4R8SQSDNO8pjee31WXuN-TVqhtIs&quot; ALIGN=RIGHT WIDTH=50% HEIGHT=50%&gt;&lt;/img&gt;
 As soon as you enter, you are hit with a wave of sweet-smelling smoke. 
@@ -4097,7 +4103,17 @@ Your whole body tingles with the pleasure of having devoured such delicious meat
 (if: $samurquest is &quot;complete&quot;)[You persuaded Kapur to treat Samur the sailor fairly]
 (if: $askuraquest is &quot;complete&quot;)[You found the missing shipment of kosa bark for Askura at the Sapphire Temple]
 (if: $ankaquest is &quot;complete&quot;)[You boosted the business of Anka the jewellery merchant]
-(if: $lurushquest is &quot;complete&quot;)[You persuaded Lurush not to sell off the orokosa breweries]</tw-passagedata></tw-storydata>
+(if: $lurushquest is &quot;complete&quot;)[You persuaded Lurush not to sell off the orokosa breweries]</tw-passagedata><tw-passagedata pid="524" name="Misha 29" tags="" position="1075,1600" size="100,100">&lt;img src=&quot;https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e2cf11f8-ba79-4bd9-b9c8-9dfbefcb70d9/dlp9608-be15f3e1-d7e0-4fbc-af2e-9d4604e7763b.png/v1/fill/w_894,h_894,q_70,strp/chatgpt_image_may_6__2025__07_51_46_pm_by_froy233_dlp9608-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiIvZi9lMmNmMTFmOC1iYTc5LTRiZDktYjljOC05ZGZiZWZjYjcwZDkvZGxwOTYwOC1iZTE1ZjNlMS1kN2UwLTRmYmMtYWYyZS05ZDQ2MDRlNzc2M2IucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.sCoNl6V2xLUS6y_6vCKtd8dUUDdtW5YxkVdvAZ6pQlM&quot; ALIGN=RIGHT WIDTH=50% HEIGHT=50%&gt;&lt;/img&gt;
+&quot;You mean Anka? She&#39;s alright, she&#39;s just... not very trusting of lishas. Her parents were eaten when she was little, so I suppose I can&#39;t blame her. But Kurush is a much safer place these days, right?&quot;
+
+[[&quot;Yeah...&quot;|Misha 1]]
+
+[[&quot;Still seems pretty dangerous to me&quot;|Misha 1]]</tw-passagedata><tw-passagedata pid="525" name="Anka 29" tags="" position="1400,2075" size="100,100">&lt;img src=&quot;https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e2cf11f8-ba79-4bd9-b9c8-9dfbefcb70d9/dlp97wd-1fcb442b-21b2-412d-ae14-d2ac037ea0a1.png/v1/fit/w_828,h_1242,q_70,strp/chatgpt_image_mar_1__2026__04_08_54_pm_by_froy233_dlp97wd-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTUzNiIsInBhdGgiOiIvZi9lMmNmMTFmOC1iYTc5LTRiZDktYjljOC05ZGZiZWZjYjcwZDkvZGxwOTd3ZC0xZmNiNDQyYi0yMWIyLTQxMmQtYWUxNC1kMmFjMDM3ZWEwYTEucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.LHn8lMqAunqesEW2noxPAsUixqzs92J0niAExvJhWtQ&quot; ALIGN=RIGHT WIDTH=50% HEIGHT=50%&gt;&lt;/img&gt;
+&quot;Misha? She&#39;s one of those weirdos who likes getting eaten. She&#39;ll probably end up getting digested if she&#39;s not careful.
+
+There&#39;s no way you&#39;ll ever see me wearing one of her outfits, if that&#39;s what you were thinking.&quot;
+
+[[&quot;Of course not...&quot;|Anka 1]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
